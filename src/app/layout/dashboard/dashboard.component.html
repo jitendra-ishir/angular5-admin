@@ -1,0 +1,4 @@
+<div [@routerTransition]>
+    <h2 class="text-muted">Dashboard</h2>
+    <ngb-alert [type]="alert.type" (close)="closeAlert(alert)" *ngFor="let alert of alerts">{{ alert.message }}</ngb-alert>
+</div>
